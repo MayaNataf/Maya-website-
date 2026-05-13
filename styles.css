@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background-image: url("images/sunset.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+
+    position: relative;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 1;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff7f0;
+}
+
+.hello-img {
+    width: 180px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* SKILLS */
+.skills {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9efe7;
+}
+
+.skills h2 {
+    margin-bottom: 40px;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.03);
+}
+
+/* COURSES CAROUSEL */
+.courses {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff7f0, #ffe0c2);
+}
+
+.courses h2 {
+    color: #0f5f6e;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.course-card {
+    background-color: white;
+    width: 60%;
+    min-height: 230px;
+    margin: auto;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.course-card h3 {
+    color: #e07a5f;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    color: #334;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* כפתורי הקרוסלה */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #0f5f6e;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-control-prev {
+    left: 10%;
+}
+
+.carousel-control-next {
+    right: 10%;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9efe7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #0f5f6e;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e07a5f;
+}
+
+.social-links a {
+    margin: 10px;
+    text-decoration: none;
+    color: #0f5f6e;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0f5f6e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .about,
+    .skills,
+    .contact,
+    .courses {
+        padding: 50px 20px;
+    }
+
+    .item,
+    .course-card {
+        width: 90%;
+    }
+
+    .hello-img {
+        width: 140px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .carousel-control-prev {
+        left: 0;
+    }
+
+    .carousel-control-next {
+        right: 0;
+    }
+}
